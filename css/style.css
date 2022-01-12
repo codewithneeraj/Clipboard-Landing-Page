@@ -1,0 +1,343 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* ======Variable css========*/
+:root{
+    --header-height:20rem;
+    
+    /*======= Colours======*/
+    
+    --first-color: hsl(171, 66%, 44%);
+    --first-color-alt: hsl(233, 100%, 69%);
+    --title-color: hsl(210, 10%, 33%);
+    --text-color: hsl(201, 11%, 66%);
+    --body-color: #fff;
+    --container-color: #fff;
+
+    /*========Font and typography======*/
+
+    --body-font: 'Bai Jamjuree', sans-serif;;
+
+   
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+
+/*========Font-weight=========*/
+
+    --font-medium:600;
+    --font-regular:400;
+
+    /*========MArgenes-bottom========*/
+
+    --mb-0-25: 0.25rem;
+    --mb-0-5:0.5rem;
+    --mb-1:1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5:2.5rem;
+
+    /*========z-index========*/
+
+    --z-tooltip:10;
+    --z-fixed: 100;
+
+}
+
+/*  Reaponsive Typography    */
+
+@media screen and (min-width:968px){
+:root
+{
+    --biggest-font-size:2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+}
+}
+
+/*==========Base========*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input{
+font-family: var(--body-font);
+font-size: 1.125rem;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-regular);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem 1rem;
+    margin: .5rem .5rem 1.5rem;
+    border-radius: 3rem;
+    color: #fff; 
+}
+
+/*Reusable*/
+
+.green__button{
+    background-color: var(--first-color);
+    box-shadow: 3px 3px 1px #00a38b;
+}
+.blue__button{
+    background-color: var(--first-color-alt);
+    box-shadow: 3px 3px 1px #445aff;
+}
+
+.description__card{
+    text-align: center;
+    padding: .25rem 1.7rem .25rem;
+    margin-bottom: 3.5rem;
+}
+.description__title{
+   margin-bottom: 1.1rem;
+}
+.description{
+
+}
+/*==========Reusable css classes========*/
+
+.container{
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.section{
+    padding: 6.5rem 0 1rem;
+}
+
+.section__title{
+font-size: var(--h1-font-size);
+margin-bottom: var(--mb-1-5);
+text-align: center;
+font-weight: var(--font-medium);
+}
+.section__description{
+    font-size: var(--text-color);
+    margin-bottom: var(--mb-2-5);
+    text-align: center;
+
+}
+/*=========Header=========*/
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header__logo{
+    position: absolute;
+    top: 7rem;
+    width: 5rem;
+    height: 5rem;
+}
+/*HOME*/
+
+.home__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/*Track*/
+
+.track__container{
+    row-gap: 3rem;
+}
+
+.track__img{
+    width: 20rem;
+    justify-self: center;
+}
+
+.track__description{
+    padding: .5rem 1rem .5rem;
+}
+/*Access*/
+
+.access{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.access__img{
+    width: 40rem;
+    align-self: center;
+}
+/*Workflow*/
+.workflow__icon{
+    padding: 2.5rem;
+}
+
+/* Company */
+
+.company__container{
+    row-gap: 4rem;
+}
+.company__card{
+    justify-self: center;
+}
+
+/*Download*/
+
+.download__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/*Footer*/
+.footer{
+    background-color: #F5F6F8;
+}
+.footer__container{
+    row-gap: .4rem;
+   
+    text-align: center;
+}
+
+.footer__logo{
+    justify-self: center;
+    margin-bottom: var(--mb-1-5);
+}
+.footer__logo-img{
+    width: 2.3rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer__link{
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.footer__social-img{
+    padding: .3rem 1rem .3rem;
+    cursor: pointer;
+}
+
+.attribution{
+    text-align: center;
+    font-size: var(--small-font-size);
+    margin-top: 2rem;
+}
+.attribution__link{
+    color: var(--first-color);
+}
+/*Media Queries*/
+
+/*For Large Devices*/
+@media screen and (min-width:800px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section__description{
+        padding: 1rem 3rem 1rem;
+    }
+    .track__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .track__img{
+        width: 900px;
+        height: auto;
+        align-self: center;
+        margin-left: -6rem;
+    }
+    .track__align{
+        text-align: initial;
+    }
+    .workflow__container{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+    .access__img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+    .company__container{
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .footer__container{
+        grid-template-columns: auto auto auto auto 500px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .track__img{
+        width: 1000px;
+        height: auto;
+        align-self: center;
+        margin-left: -10rem;
+    }
+    .access__img{
+        width: 45rem;
+    }
+    
+}
