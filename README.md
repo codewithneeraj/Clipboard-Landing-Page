@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here] https://clipboard-landing-page-epazuwzfu-codewithneeraj.vercel.app/
+- Live Site URL: https://clipboard-landing-page-epazuwzfu-codewithneeraj.vercel.app/
 
 ## My process
 
