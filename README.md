@@ -10,10 +10,8 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -28,6 +26,9 @@ Users should be able to:
 ### Screenshot
 
 
+![Screenshot 2022-01-12 at 17-42-49 Clipboard landing page](https://user-images.githubusercontent.com/26377874/149138353-ebb4c4d9-1394-4c4b-b1a1-ffc60a819242.png)
+
+![Screenshot 2022-01-12 at 17-43-08 Clipboard landing page](https://user-images.githubusercontent.com/26377874/149138469-f12bd6bd-fd6d-47bb-b9db-b27bc5485ed3.png)
 
 ### Links
 
